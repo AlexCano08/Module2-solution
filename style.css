@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.75em;
+}
+
+
+#chicken{
+    background-color: aqua;
+    width: 150px;
+    position: relative;
+
+}
+
+#beef{
+    background-color: aquamarine;
+    width: 150px;
+}
+
+#sushi{
+    background-color: beige;
+    width: 150px;
+}
+
+.title{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.25em;
+    float: right;
+}
+
+.text{
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.box-container{
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    height: 150px;
+    overflow: hidden;
+    position: static;
+    float: left;
+    
+}
+
+@media (min-width:992px) {
+    section{
+        margin-left: 0.5%;
+    }
+    #div1{
+        width: calc(33% - 20px);
+    }
+    #div2{
+        width: calc(33% - 20px);
+    }
+    #div3{
+        width: calc(33% - 20px);
+    }
+}
+
+@media (max-width:991px) and (min-width:768px){
+    section{
+        margin-left: 15%;
+        margin-right: 11%;
+    }
+
+    #div1{
+        width: 44%;
+    }
+    #div2{
+        width: 44%;
+    }
+    #div3{
+        width: calc(88% + 20px);
+    }
+}
+
+@media (max-width:767px){
+    section{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    #div1{
+        width: 95%;
+    }
+    #div2{
+        width: 95%;
+    }
+    #div3{
+        width: 95%;
+    }
+}
